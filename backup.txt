@@ -1,0 +1,15 @@
+          </div></header><center>
+<?php
+$id_plgn = $_POST ['id_plgn'];
+$id_plgn = $_POST ['id_pmbyrn'];
+$query1 = mysql_query ("select a.nama from tb_plgn a left join tb_pembyrn b  on a.id_plgn = b.id_plgn where b.id_pmbyrn = '$id_pmbyrn' ");
+$result = mysql_query ($query1);
+$output = mysql_fetch_array ($result);
+$nilai = $output['nama'];
+?>	
+
+<tr hidden = "true">
+        	<td><h5>Nama</h5></td>
+        	<td>:</td>
+        	<td><h5><input type="text" name="nama" maxlength="1000" required="required" value="<?php echo $nilai; ?>" /></h5></td>
+        </tr>

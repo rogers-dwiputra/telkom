@@ -1,0 +1,20 @@
+/* KURUMI THEME */
+.ip-header {
+position: fixed;
+top: 0;
+z-index: 100;
+min-height: 480px;
+width: 100%;
+height: 100%;
+background: #000 url(http://3.bp.blogspot.com/-682R5tf_wjo/VE4L6PigwSI/AAAAAAAAIAI/-_dKBUtsA2k/s1600/kurumi.gif) no-repeat center center; 
+/* warna background dan gambar loader */
+z-index: 999999;
+}
+.ip-header .ip-loader svg path.ip-loader-circlebg {
+stroke: #222; /* warna background circle loader */
+}
+.ip-header .ip-loader svg path.ip-loader-circle {
+-webkit-transition: stroke-dashoffset 0.2s;
+transition: stroke-dashoffset 0.2s;
+stroke: #DB2209; /* Warna garis circle saat loading */
+}

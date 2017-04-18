@@ -1,0 +1,107 @@
+/*tata letak*/
+
+table {
+	table-layout:fixed; /* force a solid grid */
+	border-collapse:collapse;
+	margin: 0 auto 1em;
+	width:450px;
+}
+	table th, table td {
+		white-space:nowrap; /* don't want wrapping text */
+		padding:2px 20px 2px 5px; /* right padding for required field marker */
+	}
+
+	table th {
+		padding:2px 0 2px 5px;
+		text-align:right;
+		font-size:13px;
+	}
+
+	td.required, tr.required td {
+		background:url("../req.gif") center right no-repeat;
+	}
+
+	table input {
+		width:100%; /* simply scale inputs to table cell size */
+	}
+		td.input-group input {
+			width:auto; /* but not for radios or checks */ 
+		}
+
+
+
+
+/* Other css */
+
+html,body {
+	margin:0;
+	padding:0;
+	height:100%;
+	background:gray;
+	
+	font-family:arial,sans-serif;
+	font-size:small;
+	color:#666;
+}
+
+h1 { 
+	font-size:3.0em ;
+	font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+	margin:0.5em 0;
+}
+
+h2 {
+	font:1.25em georgia,serif; 
+	margin:0 0 0.5em;
+}
+	h1, h2, a {
+		color:orange;
+	}
+
+p { 
+	line-height:1.5; 
+	margin:0 0 1em;
+}
+
+div#container {
+	margin:0 auto;
+	width:750px;
+	background:#f0f0f0;
+	height:auto !important;
+	height:100%;
+	min-height:100%;
+}
+
+div#header {
+	padding:1em;
+	background:#ddd url("../csslayout.gif") 98% 10px no-repeat;
+	border-bottom:6px double gray;
+}
+	div#header p {
+		font-style:italic;
+		font-size:1.1em;
+		margin:0;
+	}
+
+div#content {
+	padding:1em;
+}
+	div#content p {
+		text-align:justify;
+		padding:0 1em;
+	}
+#isi {
+	text-align:left;
+}
+#footer {
+width: 100%;
+position: absolute;
+bottom: 0px; 
+left: 0px; 
+text-align: center; 
+}
+
+
+}
+/*tata letak*/
+
